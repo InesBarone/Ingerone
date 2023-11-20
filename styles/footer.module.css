@@ -1,0 +1,22 @@
+.footerContainer {
+    background-color: #63A482;
+    color: white;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footerContainer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footerContainer li {
+    list-style: none;
+}
+
+.footerContainer a:hover {
+    color: #304C58;
+}

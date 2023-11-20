@@ -1,0 +1,125 @@
+.headerContainer {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 0 20px 3px rgb(48, 48, 48);
+}
+
+.headerContent {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    padding: 150px 10% 50px 10%;
+    z-index: 2;
+}
+
+.headerImgContainer {
+    display: flex;
+    transform: translateX(0);
+    transition: all 1s ease;
+    width: 100%;
+}
+
+.headerImg, .headerImg2, .headerImg3 {
+    background-image: linear-gradient(rgba(109, 109, 109, 0), rgba(0, 0, 0, 0.5)), url(../public/header-img.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.headerImg2 {
+    background-image: linear-gradient(rgba(109, 109, 109, 0), rgba(0, 0, 0, 0.5)), url(../public/header-img2.jpeg);
+    background-position:top;
+    transform: scaleX(-1);
+}
+
+.headerImg3 {
+    background-image: linear-gradient(rgba(109, 109, 109, 0), rgba(0, 0, 0, 0.5)), url(../public/img7.jpeg);
+    background-position:0% 48%;
+}
+
+.headerTextContainer {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.headerText {
+    color: white;
+    text-shadow: 0.05em 0.05em 0.2em rgba(0, 0, 0, 0.856);
+    position: relative;
+    top: -50px;
+}
+
+.headerTextWhite {
+    color: white;
+    animation: 2s ease-out 0s slideInFromLeft;
+}
+
+.headerText h3 {
+    font-size: 30px;
+}
+
+.headerTextWhite h3 {
+    font-size: 25px;
+    font-weight: bolder;
+    text-shadow: 0.05em 0.05em 0.2em rgba(0, 0, 0, 0.856);
+}
+
+.headerText span {
+    margin-left: 70px;
+}
+
+.headerTextWhite span {
+    margin-left: 70px;
+}
+
+.pointsContainer {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.point, .pointActive {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: gray;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.315);
+}
+
+.pointActive {
+    background-color: rgb(59, 59, 59);
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+@media (max-width: 900px) {
+    .headerTextWhite span {
+        margin-left: 0px;
+    }
+    .headerText span {
+        margin-left: 0px;
+    }
+}

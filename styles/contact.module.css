@@ -1,0 +1,101 @@
+.contactContainer {
+    width: 100%;
+    margin: auto;
+    max-width: 1200px;
+    padding: 100px 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: rgb(70, 70, 70);;
+}
+
+.contactContainer h3 {
+    font-size: 25px;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formContainer span {
+    width: 70px;
+}
+
+.contactContainer label {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+}
+
+.formTop {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.formTop label {
+    width: 50%;
+    display: flex;
+    gap: 15px;
+}
+
+.formContainer label span {
+    margin-top: 5px;
+}
+
+
+.contactContainer input, .formTop input, .contactContainer textarea {
+    width: calc(100% - 70px);
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid rgb(210, 210, 210);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(243, 243, 243, 0.604);
+    padding: 0 5px;
+}
+
+.contactContainer textarea {
+    height: 100px;
+ }
+
+ .submitButton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ }
+
+ .submitButton input {
+    width: min-content;
+    cursor: pointer;
+    background-color: #B7B7B7;
+    font-weight: bolder;
+    text-shadow: 0.05em 0.05em 0.2em rgba(0, 0, 0, 0.712);
+    color: white;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px 0.5px rgba(0, 0, 0, 0.459);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    height: 40px;
+}
+
+.submitButton input:hover {
+    background-color: rgb(99, 99, 99);
+}
+
+ @media (max-width:900px) {
+    .contactContainer {
+        text-align: center;
+        padding: 50px 0px;
+        width: 90%;
+    }
+    .formTop {
+        flex-direction: column;
+    }
+    .contactContainer label {
+        width: 100%;
+    }
+ }

@@ -1,0 +1,93 @@
+.aboutSection {
+    background-color: #304C58;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.534);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.textSection {
+    padding: 50px 0px;
+    width: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textSection h3 {
+    font-size: 25px;
+    font-style: italic;
+    margin-bottom: 50px;
+    text-shadow: 0.05em 0.05em 0.2em rgba(0, 0, 0, 0.712);
+}
+
+.textSection p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align:justify;
+}
+
+.img {
+    object-fit: cover;
+    object-position: center;
+    flex-shrink: 0;
+}
+
+.aboutImgContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+}
+
+.carouselContainer {
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    width: 400px;
+    height: 500px;
+    transition: all 0.5s ease-in-out;
+}
+
+.carouselButton, .carouselButtonRight {
+    background-color: #1a1a1abb;
+    border: none;
+    display: flex;
+    width: 30px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: all 0.2s ease-in;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.carouselButtonRight {
+    right: 0px;
+}
+
+.carouselButton:hover, .carouselButtonRight:hover {
+    background-color: #0505059d;
+    transition: all 0.2s ease-in;
+}
+
+@media (max-width: 900px) {
+    .aboutSection {
+        flex-direction: column;
+        align-items: center;
+    }
+    .textSection {
+        width: 70%;
+    }
+    .carouselContainer {
+        height: 300px;
+    }
+}

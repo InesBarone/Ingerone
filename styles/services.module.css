@@ -1,0 +1,112 @@
+.serviceSection {
+    width: 100%;
+    padding: 80px 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: rgb(70, 70, 70);
+    transition: all 1s ease-in-out;
+}
+
+.serviceSection h3 {
+    font-size: 25px;
+    font-weight: bolder;
+    text-shadow: 0.05em 0.05em 0.2em rgba(0, 0, 0, 0.219);
+    text-align: center;
+}
+
+.serviceSection ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    width: 60%;
+}
+
+.serviceSection li {
+    list-style: none;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.serviceSection button {
+    background-color: #B7B7B7;
+    font-weight: bolder;
+    text-shadow: 0.05em 0.05em 0.2em rgba(0, 0, 0, 0.712);
+    color: white;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px 0.5px rgba(0, 0, 0, 0.459);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.serviceSection button:hover {
+    background-color: rgb(99, 99, 99);
+}
+
+.servicesList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.serviceContent {
+    flex-shrink: 0;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(70, 70, 70);
+    background-color: rgba(243, 243, 243, 0.604);
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.serviceContent:hover {
+    background-color: rgba(227, 227, 227, 0.604);
+    transform: scale(1.05);
+}
+
+.serviceTitle {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+    height: 50px;
+    padding: 0 10px;
+    background-color: rgb(237, 146, 89);
+}
+
+.serviceTitle h3 {
+    font-size: 15px;
+    text-shadow: none;
+}
+
+.servicesList ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    width: 90%;
+    padding: 10px 0;
+}
+
+@media (max-width: 900px) {
+    .serviceContent {
+        width: 80%;
+    }
+    .serviceSection ul {
+        width: 80%;
+        justify-content: center;
+        text-align: center;
+    }
+}
